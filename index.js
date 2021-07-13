@@ -22,7 +22,7 @@ const corsOptions = {
 const app = express();
 
 // setting options
-app.use(corsOptions());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
