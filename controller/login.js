@@ -23,7 +23,7 @@ export const login = async (req, res) => {
     const token = jsonwebtoken.sign({ logintoken: req.body.email }, process.env.SECRETKEY);
     res.cookie("token", token, {
         httpOnly: true,
-        maxAge: 3600000 * 5,
+        maxAge: 3600000 * 24,
         secure: true,
         sameSite: "none",
     });
