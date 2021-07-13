@@ -12,7 +12,7 @@ mongoinit();
 
 // setting up cors
 const corsOptions = {
-    origin: true,
+    origin: ["http://localhost:3000"],
     methods: ["POST", "GET"],
     credentials: true,
     maxAge: 3600,
