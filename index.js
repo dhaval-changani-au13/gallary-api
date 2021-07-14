@@ -12,7 +12,7 @@ mongoinit();
 
 // setting up cors
 const corsOptions = {
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "https://eloquent-mahavira-9c5189.netlify.app/"],
     methods: ["POST", "GET"],
     credentials: true,
     maxAge: 3600,
